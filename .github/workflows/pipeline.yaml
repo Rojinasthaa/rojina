@@ -16,7 +16,7 @@ jobs:
 
       - name: "Build Docker Image"
         run: |
-          docker login -u rojina1 -p $DOCKERHUB_PAT
+          docker login -u rojina1 -p $ROJINA
           docker build -t rojina1/mywebsite:latest .
           docker push rojina1/mywebsite:latest
         env:
