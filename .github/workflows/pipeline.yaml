@@ -20,7 +20,7 @@ jobs:
           docker build -t rojina1/mywebsite:latest .
           docker push rojina1/mywebsite:latest
         env:
-          DOCKERHUB_PAT: ${{ secrets.DOCKERHUB_PAT }}
+          DOCKERHUB_PAT: ${{ secrets.$ROJINA }}
 
       - name: "Configure SSH"
         run: |
